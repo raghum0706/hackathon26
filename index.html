@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon2K26</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon2k26</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    hi
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Hackathon2k26</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hackathon2k26</h1>
+        <p>Innovate. Code. Compete.</p>
+        <div id="countdown"></div>
+        <a href="#register" class="btn">Register Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About the Event</h2>
+        <p>
+            Hackathon2k26 is a 24-hour national-level coding competition
+            where students collaborate, innovate, and build amazing solutions.
+        </p>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section dark">
+        <h2>Event Schedule</h2>
+        <ul class="schedule">
+            <li><strong>Day 1:</strong> Opening Ceremony & Problem Statement</li>
+            <li><strong>Day 1:</strong> Coding Begins</li>
+            <li><strong>Day 2:</strong> Final Submission</li>
+            <li><strong>Day 2:</strong> Results & Awards</li>
+        </ul>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="section">
+        <h2>Register Now</h2>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="text" id="college" placeholder="College Name" required />
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Hackathon2k26 | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
